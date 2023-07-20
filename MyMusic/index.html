@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head >
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Music</title>
+	<link href="./css/style.css" rel="stylesheet" /> <!-- Memanggil External CSS -->
+	<style>
+	  h1 {color:red;}
+	</style>
+</head>
+<body>
+	<style type="text/css">
+	  p {color:blue;}
+	</style>
+	<h1>Title</h1>
+	<p>blue</p>
+	<button>Button</button>
+	<!-- Header dan navigasi ke sign up -->
+	<header>
+		<!-- Brand -->
+		<h1>My Music</h1> <!-- Anak Pertama dari Header -->
+		<!-- nav untuk ke signup -->
+		<div class="navigation-group"> <!-- Anak Kedua Dari Header--> 
+			<!-- Div adalah tag untuk menggabungkan/membungkus komponen -->
+			<div class="inline"> <!-- Cucunya header, anaknya anak kedua -->
+				<nav>
+					<a href="#" class="bg-green">Sign Up</a>
+				</nav>
+			</div>
+			<div class="inline">
+				<select>
+					<option>English</option>
+					<option>Bahasa Indonesia</option>
+				</select>
+			</div>
+		</div>
+	</header>
+	<hr style="border-width: 3px; border-color: black; border-style: dashed;" />
+	<!-- <hr style="border: solid black 5px;" /> -->
+
+	<!-- Menampilkan section video -->
+	<section>
+		<center>
+			<video controls>
+				<source src="./media/video.mp4">
+			</video>
+		</center>
+	</section>
+
+
+	<!-- Aside untuk recomended tracks -->
+	<aside>
+		<!-- Prioritas Inline, Internal, External -->
+		<h3 class="text-white fw-bold bg-green">Hot Tracks</h3>
+		<ol>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+			<li>Happy Now - Zedd</li>
+		</ol>
+	</aside>
+
+	<!-- section untuk recomended song, contact us dan audio -->
+	<section id="recomended">
+		<h3>Recomended Song >></h3>
+		<div class="album_collection">
+			<figure>
+				<img src="./media/album_foto.jpg" width="200px">
+				<figcaption>Soundrenaline</figcaption>
+			</figure>
+			<figure>
+				<img src="./media/album_foto.jpg" width="200px">
+				<figcaption>Fresh International</figcaption>
+			</figure>
+			<figure>
+				<img src="./media/album_foto.jpg" width="200px">
+				<figcaption>Fresh Indonesia</figcaption>
+			</figure>
+		</div>
+
+		<div class="groupingAbout">
+			<p><u><b>Contact Us</b></u></p>
+			<ul>
+				<li>Facebook MyMusic</li>
+				<li>Twitter MyMusic</li>
+				<li>Instagram MyMusic</li>
+			</ul>
+		</div>
+		<div class="groupingAbout" style="margin-left: 50px;">
+			<figure>
+				<audio controls>
+					<source src="./media/music.mp3">
+				</audio>
+				<figcaption style="text-align: center;">Listen Here Directly-Kangen Band</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<hr style="border-width: 3px; border-color: black; border-style: solid;" />
+		<p>Copyright &copy MyMusic 2018</p>
+	</footer>
+</body>
+</html>

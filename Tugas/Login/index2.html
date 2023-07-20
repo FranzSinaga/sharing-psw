@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Halaman login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bungkus">
+      <h1>Login</h1>
+      <form>
+        <label>Username</label><br />
+        <input type="text" id="username"/><br />
+        <label>Password</label><br />
+        <input type="password" id="password"/><br />
+        <button type="button" onclick="getValue()">Log in</button>
+      </form>
+    </div>
+  </body>
+  <script>
+		function getValue () {
+      var uname = 'FRANZ'
+      var pass = 'sinaga'
+			// TIPEDATA
+			// var, let, const
+			// var tipe data yang bisa menampung value
+			// let tipe data yang digunakan pada function
+			// const tipe data yang nilainya tidak dapat berubah
+			const username = document.getElementById("username").value // get value dari id bernama username
+			const password = document.getElementById('password').value // get value dari id bernama password
+      // Perbedaan antara (=) dan (==) dan (===)
+      // (=) artinya mengubah value dari variable
+      // (==) artinya mengecek apakah variable yang dibandingkan sama valuenya
+      // (===) artinya mengeve apakan variable yang dibandingkan sama value dan tipe datanya
+
+			if (username === '') {
+        alert('Username Harus Diisi')
+        return;
+      } else if (password === '') {
+        alert('Password Harus Diisi')
+        return;
+      }
+
+      if (username !== uname) {
+        alert('Username Salah')
+        return;
+      } else if (password !== pass) {
+        alert('Password Salah')
+        return;
+      }
+
+      alert("yeayy anda berhasil masuk")
+		}
+	</script>
+</html>

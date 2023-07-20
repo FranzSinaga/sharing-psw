@@ -1,0 +1,107 @@
+* {
+	display: block;
+}
+
+body {
+	background-image: url('../media/topo2_blue.png');
+	back
+}
+
+.text{
+	font-weight: lighter; /* Mengatur tebal text */
+	font-family: sans-serif;/* Mengatur tipe tulisan, cont. sans serif, times new roman */
+	font-size: 12;
+}
+
+button {
+	padding: 20px;
+	background-color: darkred;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: green;
+}
+
+/*Header nya menjadi flexbox*/
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/*	align-items: center;*/
+}
+
+header h1 {
+	margin-left: 40px;
+}
+
+.bg-red {
+	background-color: red;
+}
+
+.bg-green {
+	background-color: green;
+}
+
+.text-white {
+	color: white;
+}
+
+.fw-bold {
+	font-weight: bolder;
+}
+
+.navigation-group {
+	margin: 30px 40px 0px 0px; /* Urutan valuenya top, right, bottom, left */
+ }
+
+.inline {
+	display: inline-block;
+}
+
+.inline select {
+	margin-left: 10px;
+}
+
+/*Bagian Section*/
+video {
+	width: 900px;
+	height: 400px;
+}
+
+figure {
+	display: inline-block;
+}
+
+.groupingAbout {
+	display: inline-block;
+}
+
+#recomended {
+	margin-left: 40px;
+}
+
+/*bagian Aside*/
+aside {
+	float: right;
+	width:37%;
+}
+
+aside ol li {
+	margin-top: 20px;
+}
+
+footer p {
+	text-align: center;
+	background-color: red;
+}
+
+.album_collection figure img {
+	border: solid gray 4px;
+}
+
+.album_collection figure figcaption {
+	border: solid gray 4px;
+	background-color: white;
+}

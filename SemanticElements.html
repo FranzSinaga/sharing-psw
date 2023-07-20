@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Semantic Elements</title>
+	<!-- CSS Ada 3: Inline, Internal, External -->
+	<style type="text/css">
+		/*	
+			Di CSS ada 3 komponen
+			- Selector
+				Selector ini ada 3
+				1. Selector by tag
+				2. Selector by class
+					ditandai dengan tanda (.) diikuti dengan nama classnya
+				3. Selector by id
+					ditandai dengan tanda (#) diikuti dengan nama idnya
+			- Property
+				Property itu adalah hal-hal yang ingin kita ubah pada selectornya
+			- Value
+				Value adalah nilai yang ingin kita masukkan kedalam property sehingga selectornya berubah sesuai dengan nilainya
+
+			Penggabungan Selector
+		*/
+		html {
+			/*
+				background-color adalah property
+				whitesmoke adalah value
+
+			*/
+			background-color: whitesmoke;
+		}
+		h1 { /* Selector By Tag */
+			color: green;
+			text-align: center;
+		}
+		.navigation{ /* Selector By Class */
+			background-color: red;
+		}
+		#descHeader { /* Selector By ID */
+			color: brown;
+			text-align: center;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		#list-nav li{
+			/*
+				Cara baca selectornya adalah: 
+				CSS bakal cari id list-nav, karena ada spasi dan setelahnyha ada selector lagi maka dia ubah itu adalah selector yang dibawahnya sesuai dengan selectornya
+			*/
+			list-style-type: none;
+			display: inline-block;
+		}
+		li a{
+			color: greenyellow;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 style="background-color: red;">Semantic Elements</h1>
+		<h3 id="descHeader">Welcome To My Personal Website</h3>
+	</header>
+	<nav class="navigation">
+		<ol id="list-nav">
+			<li><a href="PelajaranTeks.html">Home</a></li>
+			<li><a href="PelajaranTable.html">Galery</a></li>
+			<li><a href="PelajaranForm.html">About</a></li>
+		</ol>
+	</nav>
+</body>
+</html>

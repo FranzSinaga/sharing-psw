@@ -1,0 +1,77 @@
+* {
+  margin: 5px;
+  padding: 0px;
+  outline: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* body {
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.bungkus {
+  position: absolute; /* absolute; menentukan tipe posisi terhadap component kita */
+  left: 50%; /* untuk memntukan jarak component kita dari sebelah kiri layar */
+  top: 50%; /* untuk memntukan jarak component kita dari sebelah kanan layar */
+  transform: translate(-50%, -50%); /* untuk mengubah/memanipulasi component */
+  padding: 50px; /* Mengatur jarak antara base terhadap content */
+  /* margin: 50px; Memberikan jarak antar component */
+  width: 300px; /* Memberikan lebar dari komponennya */
+
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 40px 20px 10px -10px #2979ff;
+  /* box shadow berfungsi untuk memberikan bayangan
+  value 1: posisi horizontal
+  value 2: posisi vertikal
+  value 3: blur
+  value 4: memperbesar/memperkecil
+  value 5: warna */
+}
+
+.bungkus h1 {
+  text-align: left;
+  color: whitesmoke;
+  margin-bottom: 30px;
+  text-transform: capitalize; /* Memanipulasi text */
+  border-bottom: 10px solid #96a1b4; /* memberikan garis dibawah dari componentnya */
+  /* Border Bottom
+    value 1 : ketebalan garis
+    value 2 : jenis garis
+    value 3 : warna garis
+  */
+}
+
+.bungkus label {
+  text-align: left;
+  color: #90caf9;
+}
+
+.bungkus form input {
+  width: calc(100% - 20px); /* calc -> itu artinya calculate */
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #2979ff;
+  color: #fff;
+  font-size: 20px;
+}
+
+.bungkus form button {
+  cursor: pointer;
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  background-color: #2979ff;
+  font-size: 18px;
+  color: #fafafa;
+}
+
+.bungkus form button:hover {
+    background-color: #15418b;
+}
